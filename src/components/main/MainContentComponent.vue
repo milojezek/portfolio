@@ -24,80 +24,24 @@
         <button>Reset</button>
       </div>
     </section>
-    <section>
-      <h2>Skills</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Area</th>
-            <th>Technologies</th>
-          </tr>
-        </thead>
-        <tbody>
-          <SkillAreaItem
-            v-for="skillArea in skillAreas"
-            :key="skillArea.area"
-            :area="skillArea.area"
-            :technologies="skillArea.technologies"
-          />
-        </tbody>
-      </table>
-    </section>
-    <section>
-      <h2>Latest Projects</h2>
-      <div class="cards-grid">
-        <ProjectCard
-          v-for="project in projects"
-          :key="project.id"
-          :date="project.date"
-          :title="project.title"
-          :technologies="project.technologies"
-          :description="project.description"
-          :live-url="project.liveUrl"
-          :github-url="project.githubUrl"
-          :image="project.image"
-        />
-      </div>
-    </section>
+    <SkillsSection />
+    <ProjectsSection />
   </main>
 </template>
 
 <script>
-import SkillAreaItem from "./SkillAreaItem.vue";
-import ProjectCard from "./ProjectCard.vue";
+import SkillsSection from "./skills/SkillsSection.vue";
+import ProjectsSection from "./projects/ProjectsSection.vue";
 
 export default {
   name: "MainContentComponent",
   components: {
-    SkillAreaItem,
-    ProjectCard,
+    SkillsSection,
+    ProjectsSection,
   },
   data() {
     return {
       showColorDiv: false,
-      skillAreas: [
-        {
-          area: "JavaScript",
-          technologies: ["React.js", "Vue.js", "Node.js"],
-        },
-        {
-          area: "Others",
-          technologies: ["Git", "GitHub", "Azure DevOps", "CI/CD"],
-        },
-      ],
-      projects: [
-        {
-          id: 1,
-          date: "August 27, 2025",
-          title: "My Portfolio",
-          technologies: ["VueJS", "Vite", "CSS"],
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          liveUrl: "/",
-          githubUrl: "/",
-          image: require("@/assets/images/bear.jpg"),
-        },
-      ],
     };
   },
   methods: {
