@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"]
     }
+  },
+  "vueCompilerOptions": {
+    "globalTypesPath": "./src/types/global.js"
   },
   "exclude": ["node_modules", "dist"]
 }
