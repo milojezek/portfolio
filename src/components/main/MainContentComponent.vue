@@ -32,3 +32,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.intro-header p {
+  padding-top: 0.25rem;
+}
+
+.intro-description {
+  max-width: 500px;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+</style>

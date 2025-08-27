@@ -56,3 +56,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+</style>
