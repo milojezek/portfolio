@@ -11,7 +11,7 @@
     "editor.defaultFormatter": "octref.vetur"
   },
   "[css]": {
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "vscode.css-language-features"
   },
   "vetur.format.defaultFormatter.html": "prettyhtml",
   "vetur.format.defaultFormatter.css": "prettier",

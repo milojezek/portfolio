@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2>Skills</h2>
-    <table>
+    <table id="skills-table">
       <thead>
         <tr>
           <th>Area</th>

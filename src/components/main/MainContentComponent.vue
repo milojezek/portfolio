@@ -14,15 +14,7 @@
         <a href="https://www.linkedin.com/in/miloslav-jezek/" target="_blank">LinkedIn</a>
         <a href="https://github.com/milojezek" target="_blank">GitHub</a>
       </div>
-      <div id="play-game">
-        <button @click="toggleColorDiv">Wanna be creative?</button>
-      </div>
-      <div class="color-div" v-show="showColorDiv">
-        <h4>Pick a color</h4>
-        <p>Oops...</p>
-        <input type="color" id="color-picker" value="#0084FF" />
-        <button>Reset</button>
-      </div>
+      <ColorGame />
     </section>
     <SkillsSection />
     <ProjectsSection />
@@ -32,22 +24,14 @@
 <script>
 import SkillsSection from "./skills/SkillsSection.vue";
 import ProjectsSection from "./projects/ProjectsSection.vue";
+import ColorGame from "./ColorGame.vue";
 
 export default {
   name: "MainContentComponent",
   components: {
     SkillsSection,
     ProjectsSection,
-  },
-  data() {
-    return {
-      showColorDiv: false,
-    };
-  },
-  methods: {
-    toggleColorDiv() {
-      this.showColorDiv = !this.showColorDiv;
-    },
+    ColorGame,
   },
 };
 </script>
