@@ -43,11 +43,44 @@
         </tbody>
       </table>
     </section>
+    <section>
+      <h2>Latest Projects</h2>
+      <div class="cards-grid">
+        <div class="project-card">
+          <div>
+            <p>August 27, 2025</p>
+            <h4>My Portfolio</h4>
+            <div class="tech-list">
+              <div class="card-button-secondary">
+                <p>VueJS</p>
+              </div>
+              <div class="card-button-secondary">
+                <p>ReactJS</p>
+              </div>
+              <div class="card-button-secondary">
+                <p>ReactJS</p>
+              </div>
+              <div class="card-button-secondary">
+                <p>ReactJS</p>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="project-links">
+              <a href="/" target="_blank">Live</a>
+              <a href="/" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <div class="img-div">
+            <img class="big-img" src="@assets/images/bear.jpg" alt="My Portfolio" />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
-import SkillAreaItem from "@/components/SkillAreaItem.vue";
+import SkillAreaItem from "./SkillAreaItem.vue";
 
 export default {
   name: "MainContentComponent",
