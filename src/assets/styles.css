@@ -1,0 +1,203 @@
+/* Portfolio Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background-primary: white;
+    --background-muted: #f8fafc;
+    --color-primary: #030615;
+    --color-link: #2563eb;
+    --color-link-transparent: rgba(37, 99, 235, 0.1);
+    --border-primary: #f1f5f9;
+    --border-secondary: #bed1e7;
+    --border-radius-small: 0.5rem;
+    --border-radius-large: 0.75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: var(--background-primary);
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    line-height: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    width: fit-content;
+}
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+p {
+    display: block;
+    width: fit-content;
+}
+
+span {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Links */
+a {
+    color: var(--color-link);
+}
+
+a:active,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+/* Images */
+img {
+    border-radius: var(--border-radius-large);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tables */
+table {
+    width: fit-content;
+    border: 1px solid var(--border-primary);
+    background: var(--background-muted);
+    border-radius: var(--border-radius-small);
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+th {
+    background-color: var(--background-muted);
+}
+
+td {
+    background: var(--background-primary);
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+thead {
+    border-collapse: collapse;
+}
+
+table tr:hover td,
+tbody tr:nth-child(even):hover td {
+    background-color: var(--background-muted);
+}
+
+/* Layout */
+header,
+main,
+footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main,
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 4rem;
+}
+
+section {
+    gap: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+    body {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    h5 {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
