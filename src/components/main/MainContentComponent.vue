@@ -46,34 +46,17 @@
     <section>
       <h2>Latest Projects</h2>
       <div class="cards-grid">
-        <div class="project-card">
-          <div>
-            <p>August 27, 2025</p>
-            <h4>My Portfolio</h4>
-            <div class="tech-list">
-              <div class="card-button-secondary">
-                <p>VueJS</p>
-              </div>
-              <div class="card-button-secondary">
-                <p>ReactJS</p>
-              </div>
-              <div class="card-button-secondary">
-                <p>ReactJS</p>
-              </div>
-              <div class="card-button-secondary">
-                <p>ReactJS</p>
-              </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="project-links">
-              <a href="/" target="_blank">Live</a>
-              <a href="/" target="_blank">GitHub</a>
-            </div>
-          </div>
-          <div class="img-div">
-            <img class="big-img" src="@assets/images/bear.jpg" alt="My Portfolio" />
-          </div>
-        </div>
+        <ProjectCard
+          v-for="project in projects"
+          :key="project.id"
+          :date="project.date"
+          :title="project.title"
+          :technologies="project.technologies"
+          :description="project.description"
+          :live-url="project.liveUrl"
+          :github-url="project.githubUrl"
+          :image="project.image"
+        />
       </div>
     </section>
   </main>
@@ -81,11 +64,13 @@
 
 <script>
 import SkillAreaItem from "./SkillAreaItem.vue";
+import ProjectCard from "./ProjectCard.vue";
 
 export default {
   name: "MainContentComponent",
   components: {
     SkillAreaItem,
+    ProjectCard,
   },
   data() {
     return {
@@ -98,6 +83,19 @@ export default {
         {
           area: "Others",
           technologies: ["Git", "GitHub", "Azure DevOps", "CI/CD"],
+        },
+      ],
+      projects: [
+        {
+          id: 1,
+          date: "August 27, 2025",
+          title: "My Portfolio",
+          technologies: ["VueJS", "Vite", "CSS"],
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          liveUrl: "/",
+          githubUrl: "/",
+          image: require("@/assets/images/bear.jpg"),
         },
       ],
     };
