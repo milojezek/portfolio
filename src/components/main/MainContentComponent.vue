@@ -1,20 +1,6 @@
 <template>
   <main>
-    <section>
-      <div class="intro-header">
-        <h1>Hey there! I'm Milo...</h1>
-        <p>Full Stack Developer</p>
-      </div>
-      <h5 class="intro-description">
-        Based in Prague (Czechia), but enjoyng the flexibility of working from anywhere.
-        I love food, languages, travelling, playing volleyball, and building apps.
-      </h5>
-      <div class="links-container">
-        <a href="/" target="_blank">Email me</a>
-        <a href="https://www.linkedin.com/in/miloslav-jezek/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/milojezek" target="_blank">GitHub</a>
-      </div>
-    </section>
+    <IntroSection />
     <SkillsSection />
     <ProjectsSection />
   </main>
@@ -23,10 +9,12 @@
 <script>
 import SkillsSection from "./skills/SkillsSection.vue";
 import ProjectsSection from "./projects/ProjectsSection.vue";
+import IntroSection from "./intro/IntroSection.vue";
 
 export default {
   name: "MainContentComponent",
   components: {
+    IntroSection,
     SkillsSection,
     ProjectsSection,
   },
@@ -34,18 +22,7 @@ export default {
 </script>
 
 <style scoped>
-.intro-header p {
-  padding-top: 0.25rem;
-}
+/* intro-header styles moved to IntroHeader.vue */
 
-.intro-description {
-  max-width: 500px;
-}
-
-.links-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 0;
-}
+/* intro section styles moved to IntroSection.vue */
 </style>
