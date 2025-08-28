@@ -2,23 +2,20 @@
   <section>
     <div class="intro-row">
       <div class="intro-photo">
-        <img src="@/assets/images/intro_photo.png" alt="Milo's photo" />
+        <img :src="introPhoto" alt="Milo's photo" />
       </div>
       <div class="intro-content">
         <div class="intro-header">
-          <h1>Hey there! I'm Milo...</h1>
-          <p>Full Stack Developer</p>
+          <h1>{{ headingText }}</h1>
+          <div class="intro-divider"></div>
         </div>
-        <h5 class="intro-description">
-          Based in Prague (Czechia), but enjoyng the flexibility of working from anywhere.
-          I love food, languages, travelling, playing volleyball, and building apps.
-        </h5>
+        <h5 class="intro-description">{{ descriptionText }}</h5>
         <div class="links-container">
-          <a href="https://www.linkedin.com/in/miloslav-jezek/" target="_blank" class="icon-link">
-            <img src="@assets/icons/linkedin-icon.png" alt="LinkedIn" class="icon-img" />
+          <a :href="linkedinUrl" target="_blank" class="icon-link">
+            <img :src="linkedinIcon" alt="LinkedIn" class="icon-img" />
           </a>
-          <a href="https://github.com/milojezek" target="_blank" class="icon-link">
-            <img src="@assets/icons/github-icon.png" alt="GitHub" class="icon-img" />
+          <a :href="githubUrl" target="_blank" class="icon-link">
+            <img :src="githubIcon" alt="GitHub" class="icon-img" />
           </a>
         </div>
       </div>
@@ -27,8 +24,24 @@
 </template>
 
 <script>
+import linkedinIcon from "@/assets/icons/linkedin_icon.png";
+import githubIcon from "@/assets/icons/github_icon.png";
+import introPhoto from "@/assets/images/intro_photo.png";
+
 export default {
   name: "IntroSection",
+  data() {
+    return {
+      headingText: "Hey there! I'm Milo...",
+      descriptionText:
+        "A Prague-based full-stack developer enjoying the flexibility of working from anywhere. I love food, languages, traveling, playing volleyball, and building apps.",
+      linkedinUrl: "https://www.linkedin.com/in/miloslav-jezek/",
+      githubUrl: "https://github.com/milojezek",
+      linkedinIcon,
+      githubIcon,
+      introPhoto,
+    };
+  },
 };
 </script>
 
@@ -39,8 +52,30 @@ export default {
   gap: 2rem;
 }
 
+.waving-hand {
+  display: inline-flex;
+  align-items: center;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 0.4em;
+}
+
+.waving-hand-img {
+  height: 1em;
+  width: 1em;
+  object-fit: contain;
+}
+
+.intro-divider {
+  width: 100%;
+  height: 2px;
+  background: #00a825;
+  border-radius: 2px;
+  margin: 1rem 0 0.5rem 0;
+}
+
 .intro-photo {
-  max-width: 30%;
+  max-width: 35%;
   display: flex;
   align-items: center;
   justify-content: center;
