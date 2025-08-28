@@ -14,9 +14,12 @@
           I love food, languages, travelling, playing volleyball, and building apps.
         </h5>
         <div class="links-container">
-          <a href="/" target="_blank">Email me</a>
-          <a href="https://www.linkedin.com/in/miloslav-jezek/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/milojezek" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/miloslav-jezek/" target="_blank" class="icon-link">
+            <img src="@assets/icons/linkedin-icon.png" alt="LinkedIn" class="icon-img" />
+          </a>
+          <a href="https://github.com/milojezek" target="_blank" class="icon-link">
+            <img src="@assets/icons/github-icon.png" alt="GitHub" class="icon-img" />
+          </a>
         </div>
       </div>
     </div>
@@ -64,6 +67,17 @@ export default {
   padding: 1rem 0;
 }
 
+.icon-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
 @media (max-width: 640px) {
   .intro-row {
     flex-direction: column;
@@ -77,10 +91,13 @@ export default {
   }
   .intro-content {
     order: 1;
+    display: flex;
+    flex-direction: column;
   }
-  .intro-photo img {
-    max-width: 100%;
-    width: 100%;
+  .links-container {
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
   }
 }
 </style>
