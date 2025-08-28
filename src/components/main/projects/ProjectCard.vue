@@ -61,6 +61,14 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  border: 1px solid darkgray;
+  box-shadow: 10px 10px;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.project-card:hover {
+  box-shadow: 10px 10px darkgreen;
 }
 
 .project-card > div:first-of-type {

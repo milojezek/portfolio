@@ -61,6 +61,6 @@ export default {
 .cards-grid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 </style>
