@@ -26,7 +26,7 @@
 <script>
 import linkedinIcon from "@/assets/icons/linkedin_icon.png";
 import githubIcon from "@/assets/icons/github_icon.png";
-import introPhoto from "@/assets/images/intro_photo.png";
+import introPhoto from "@/assets/images/intro_photo_no_bg.png";
 
 export default {
   name: "IntroSection",
@@ -116,13 +116,12 @@ export default {
 @media (max-width: 640px) {
   .intro-row {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 1.5rem;
   }
   .intro-photo {
     order: 2;
-    max-width: 100%;
-    margin-top: 1rem;
+    max-width: 75%;
   }
   .intro-content {
     order: 1;
