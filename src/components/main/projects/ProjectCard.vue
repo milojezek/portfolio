@@ -68,7 +68,7 @@ export default {
 }
 
 .project-card:hover {
-  box-shadow: 10px 10px darkgreen;
+  box-shadow: 10px 10px var(--color-green-highlight);
 }
 
 .project-card > div:first-of-type {

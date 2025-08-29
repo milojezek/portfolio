@@ -69,7 +69,7 @@ export default {
 .intro-divider {
   width: 100%;
   height: 2px;
-  background: #00a825;
+  background: var(--color-green-highlight);
   border-radius: 2px;
   margin: 1rem 0 0.5rem 0;
 }
