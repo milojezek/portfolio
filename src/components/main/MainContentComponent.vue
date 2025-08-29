@@ -20,9 +20,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* intro-header styles moved to IntroHeader.vue */
-
-/* intro section styles moved to IntroSection.vue */
-</style>
