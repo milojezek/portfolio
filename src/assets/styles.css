@@ -5,7 +5,7 @@
     --background-primary: white;
     --background-muted: #f8fafc;
     --color-primary: #030615;
-    --color-link: #2563eb;
+    --color-link: #2500a8;
     --color-link-transparent: rgba(37, 99, 235, 0.1);
     --color-green-highlight: #00a825;
     --border-primary: #f1f5f9;
@@ -173,6 +173,35 @@ main {
 
 section {
     gap: 1rem;
+}
+
+.skill-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+}
+
+.skill-list div {
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);
+}
+
+.skill-list p {
+    font-size: 0.8rem;
+}
+
+.card-button-secondary {
+    color: var(--color-link);
+    background: var(--color-link-transparent);
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card-button-secondary:hover {
+    transform: none;
+    opacity: 0.6;
 }
 
 /* Responsive Design */
