@@ -4,7 +4,7 @@
       <h3>{{ title }}</h3>
     </div>
     <div class="skill-tags-grid">
-      <div class="card-button-secondary" v-for="skill in skills" :key="skill">
+      <div class="skill-tag" v-for="skill in skills" :key="skill">
         <p>{{ skill }}</p>
       </div>
     </div>
@@ -60,7 +60,7 @@ export default {
   width: 100%;
 }
 
-.skill-tags-grid .card-button-secondary {
+.skill-tags-grid .skill-tag {
   padding: 0.25rem 0.75rem;
   border-radius: var(--border-radius-small);
   font-size: 0.875rem;

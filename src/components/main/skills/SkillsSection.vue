@@ -1,5 +1,5 @@
 <template>
-  <section class="skills-section">
+  <section id="skills-section" class="skills-section">
     <h2>Skills</h2>
     <div class="skills-container">
       <SkillArea title="Frontend" :skills="frontend" />

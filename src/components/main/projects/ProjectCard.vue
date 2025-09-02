@@ -4,7 +4,7 @@
       <p>{{ date }}</p>
       <h4>{{ title }}</h4>
       <div class="skill-list">
-        <div class="card-button-secondary" v-for="tech in technologies" :key="tech">
+        <div class="skill-tag" v-for="tech in technologies" :key="tech">
           <p>{{ tech }}</p>
         </div>
       </div>

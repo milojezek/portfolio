@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="projects-section">
     <h2>Latest Projects</h2>
     <div class="cards-grid">
       <ProjectCard

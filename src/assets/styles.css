@@ -6,6 +6,7 @@
     --background-muted: #f8fafc;
     --color-primary: #030615;
     --color-link: #2500a8;
+    --color-link-brown: #A82500;
     --color-link-transparent: rgba(37, 99, 235, 0.1);
     --color-green-highlight: #00a825;
     --border-primary: #f1f5f9;
@@ -192,14 +193,14 @@ section {
     font-size: 0.8rem;
 }
 
-.card-button-secondary {
+.skill-tag {
     color: var(--color-link);
     background: var(--color-link-transparent);
     border: none !important;
     box-shadow: none !important;
 }
 
-.card-button-secondary:hover {
+.skill-tag:hover {
     transform: none;
     opacity: 0.6;
 }
