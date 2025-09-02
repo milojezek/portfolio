@@ -104,7 +104,6 @@ export default {
   margin-left: 3rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .company-experience {
     padding: 1rem 0;

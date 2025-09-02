@@ -153,7 +153,6 @@ export default {
   gap: 0.5rem;
 }
 
-/* Details styling */
 details {
   border-radius: var(--border-radius-small);
 }
@@ -250,7 +249,6 @@ details > *:not(summary) {
   opacity: 0.5;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .position-card {
     padding: 1rem 0;
