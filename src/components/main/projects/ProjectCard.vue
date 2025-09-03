@@ -43,7 +43,6 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
