@@ -7,13 +7,11 @@
       <div class="intro-content">
         <div class="intro-header">
           <h1>{{ headingText }}</h1>
+          <p>A full stack developer based in Prague, Czechia</p>
           <div class="intro-divider"></div>
         </div>
         <div class="intro-description">
-          <p>
-            I'm a Prague-based
-            <strong>developer building apps and websites</strong>, currently working at FPT Czech as a web full-stack developer. I'm interested in projects related to languages, travelling, finance and healthy lifestyle.
-          </p>
+          <p>I'm into building apps, websites and simply anything that supports great visions and products. When I'm not designing or coding, you'll find me learning languages, travelling, preparing food or playing volleyball.</p>
         </div>
         <div class="links-container">
           <a :href="linkedinUrl" target="_blank" class="icon-link">
