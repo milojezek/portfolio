@@ -11,7 +11,7 @@
           <div class="intro-divider"></div>
         </div>
         <div class="intro-description">
-          <p>I'm into building apps, websites and simply anything that supports great visions and products. When I'm not designing or coding, you'll find me learning languages, travelling, preparing food or playing volleyball.</p>
+          <p>I'm into building apps, websites and simply anything that supports great visions and products. When I'm not designing or coding, you'll find me learning languages, travelling, preparing food, reading or playing volleyball.</p>
         </div>
         <div class="links-container">
           <a :href="linkedinUrl" target="_blank" class="icon-link">
