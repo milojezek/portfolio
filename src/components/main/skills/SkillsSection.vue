@@ -51,7 +51,7 @@ export default {
 .skills-section {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .skills-container {

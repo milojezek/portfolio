@@ -123,7 +123,7 @@ export default {
   .intro-row {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.5rem;
   }
   .intro-photo {
     order: 2;
