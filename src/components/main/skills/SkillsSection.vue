@@ -1,11 +1,9 @@
 <template>
   <section id="skills-section" class="skills-section">
-    <h2>Skills</h2>
+    <h2>What I Do & Use</h2>
     <div class="skills-container">
-      <SkillArea title="Frontend" :skills="frontend" />
-      <SkillArea title="Backend" :skills="backend" />
-      <SkillArea title="DevOps" :skills="devops" />
-      <SkillArea title="Work Management" :skills="workManagement" />
+      <SkillArea title="Web Development" :skills="webDevelopment" />
+      <SkillArea title="Development Management" :skills="devManagement" />
     </div>
   </section>
 </template>
@@ -22,26 +20,28 @@ export default {
   },
   data() {
     return {
-      frontend: [
+      webDevelopment: [
         "JavaScript/TypeScript",
         "ReactJS",
         "VueJS",
         "HTML",
         "CSS",
-        "styled-components",
-        "TailwindCSS",
-        "Responsive Design",
-        "UI/UX principles",
-      ],
-      backend: [
-        "JavaScript/TypeScript",
         "NodeJS",
         "ExpressJS",
         "RESTful APIs",
         "PostgreSQL",
+        "Go (learning)",
       ],
-      devops: ["Git", "GitHub", "Azure DevOps", "Azure Resources"],
-      workManagement: ["Iterative development", "Scrum", "Kanban"],
+      devManagement: [
+        "Git",
+        "GitHub",
+        "Azure DevOps",
+        "Azure Resources",
+        "Docker",
+        "Iterative development",
+        "Scrum",
+        "Kanban",
+      ],
     };
   },
 };
