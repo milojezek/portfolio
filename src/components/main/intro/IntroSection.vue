@@ -9,7 +9,12 @@
           <h1>{{ headingText }}</h1>
           <div class="intro-divider"></div>
         </div>
-        <h5 class="intro-description">{{ descriptionText }}</h5>
+        <div class="intro-description">
+          <p>
+            I'm a Prague-based
+            <strong>developer building apps and websites</strong>, currently working at FPT Czech as a web full-stack developer. I'm interested in projects related to languages, travelling, finance and healthy lifestyle.
+          </p>
+        </div>
         <div class="links-container">
           <a :href="linkedinUrl" target="_blank" class="icon-link">
             <img :src="linkedinIcon" alt="LinkedIn" class="icon-img" />
@@ -32,9 +37,7 @@ export default {
   name: "IntroSection",
   data() {
     return {
-      headingText: "Hey there! I'm Milo...",
-      descriptionText:
-        "A Prague-based full-stack developer enjoying the flexibility of working from anywhere. I love food, languages, traveling, playing volleyball, and building apps.",
+      headingText: "Miloslav Jezek",
       linkedinUrl: "https://www.linkedin.com/in/miloslav-jezek/",
       githubUrl: "https://github.com/milojezek",
       linkedinIcon,
@@ -71,7 +74,7 @@ export default {
   height: 2px;
   background: var(--color-green-highlight);
   border-radius: 2px;
-  margin: 1rem 0 0.5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .intro-photo {
@@ -93,6 +96,7 @@ export default {
 
 .intro-description {
   max-width: 500px;
+  font-size: 0.9rem;
 }
 
 .links-container {
