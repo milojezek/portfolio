@@ -5,12 +5,9 @@
       <ProjectCard
         v-for="project in projects"
         :key="project.id"
-        :date="project.date"
         :title="project.title"
-        :technologies="project.technologies"
         :description="project.description"
-        :live-url="project.liveUrl"
-        :github-url="project.githubUrl"
+        :projectUrl="project.projectUrl"
         :image="project.image"
       />
     </div>
@@ -19,7 +16,6 @@
 
 <script>
 import ProjectCard from "./ProjectCard.vue";
-import bearImage from "@/assets/images/bear.jpg";
 
 export default {
   name: "ProjectsSection",
@@ -31,25 +27,36 @@ export default {
       projects: [
         {
           id: 1,
-          date: "August 27, 2025",
-          title: "My Portfolio",
-          technologies: ["VueJS", "Vite", "CSS"],
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          liveUrl: "/",
-          githubUrl: "/",
-          image: bearImage,
+          title: "Random Project",
+          description: "One random project randomly written by me.",
+          projectUrl: "https://example.com",
+          image:
+            "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
         },
         {
           id: 2,
-          date: "August 27, 2025",
-          title: "My Portfolio",
-          technologies: ["VueJS", "Vite", "CSS"],
+          title: "Randomisten",
+          description: "Another random project randomly put here.",
+          projectUrl: "https://example.com",
+          image:
+            "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        },
+        {
+          id: 3,
+          title: "Three Is Magic",
+          description: "Three is a magical number. Ideal for ideality.",
+          projectUrl: "https://example.com",
+          image:
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        },
+        {
+          id: 4,
+          title: "Not the End",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          liveUrl: "/",
-          githubUrl: "/",
-          image: bearImage,
+            "This project card is the last one but it's definitely not the end.",
+          projectUrl: "https://example.com",
+          image:
+            "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
         },
       ],
     };
@@ -59,8 +66,14 @@ export default {
 
 <style scoped>
 .cards-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>
