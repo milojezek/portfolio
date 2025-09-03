@@ -115,6 +115,10 @@ export default {
   object-fit: contain;
 }
 
+.icon-img:hover {
+  scale: 1.2;
+}
+
 @media (max-width: 640px) {
   .intro-row {
     flex-direction: column;
