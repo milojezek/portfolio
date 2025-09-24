@@ -28,7 +28,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     padding: 2rem 3rem;
     width: 100%;
