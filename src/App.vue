@@ -1,7 +1,6 @@
 <template>
   <HeaderComponent />
   <MainContentComponent />
-  <FooterComponent />
 </template>
 
 <script>
@@ -14,7 +13,6 @@ export default {
   components: {
     HeaderComponent,
     MainContentComponent,
-    FooterComponent,
   },
 };
 </script>
