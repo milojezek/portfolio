@@ -3,14 +3,7 @@
 
 :root {
     --background-primary: white;
-    --background-muted: #f8fafc;
     --color-primary: #030615;
-    --color-link: #2500a8;
-    --color-link-brown: #A82500;
-    --color-link-transparent: rgba(37, 99, 235, 0.1);
-    --color-green-highlight: #00a825;
-    --border-primary: #f1f5f9;
-    --border-secondary: #bed1e7;
     --border-radius-small: 0.5rem;
     --border-radius-large: 0.75rem;
 }
@@ -25,210 +18,50 @@
 body {
     background: var(--background-primary);
     color: var(--color-primary);
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.6rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Montserrat", sans-serif;
-    width: fit-content;
-}
-
-h1 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-h4 {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-}
-
-h5 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-p {
-    display: block;
-    width: fit-content;
-}
-
-span {
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-
-/* Links */
-a {
-    color: var(--color-link);
-}
-
-a:active,
-a:focus,
-a:hover {
-    text-decoration: none;
-}
-
-/* Images */
-img {
-    border-radius: var(--border-radius-large);
-    max-width: 100%;
-    height: auto;
-}
-
-/* Tables */
-table {
-    width: fit-content;
-    border: 1px solid var(--border-primary);
-    background: var(--background-muted);
-    border-radius: var(--border-radius-small);
-}
-
-table tr:last-child td:first-child {
-    border-bottom-left-radius: 8px;
-}
-
-table tr:last-child td:last-child {
-    border-bottom-right-radius: 8px;
-}
-
-table tr:first-child th:first-child {
-    border-top-left-radius: 8px;
-}
-
-table tr:first-child th:last-child {
-    border-top-right-radius: 8px;
-}
-
-th {
-    background-color: var(--background-muted);
-}
-
-td {
-    background: var(--background-primary);
-}
-
-td,
-th {
-    text-align: left;
-    padding: 8px;
-}
-
-thead {
-    border-collapse: collapse;
-}
-
-table tr:hover td,
-tbody tr:nth-child(even):hover td {
-    background-color: var(--background-muted);
-}
-
-/* Layout */
-header,
-main,
-footer {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-}
-
-nav {
-    display: flex;
     align-items: center;
-    gap: 1rem;
+    max-width: 1200px;
+    padding: 2rem 3rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    max-width: 1200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-main,
-section {
-    display: flex;
-    flex-direction: column;
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 main {
-    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8rem 3rem 0 3rem;
 }
 
-section {
-    gap: 1rem;
-}
-
-.skill-list {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    padding: 0.25rem 0;
-}
-
-.skill-list div {
-    padding: 0.1rem 0.5rem;
-    border-radius: var(--border-radius-small);
-}
-
-.skill-list p {
-    font-size: 0.8rem;
-}
-
-.skill-tag {
-    color: var(--color-link);
-    background: var(--color-link-transparent);
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.skill-tag:hover {
-    transform: none;
-    opacity: 0.6;
-}
-
-/* Responsive Design */
-@media (min-width: 640px) {
-    body {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    h1 {
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-    }
-
-    h2 {
-        font-size: 1.875rem;
-        line-height: 2.25rem;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-    }
-
-    h5 {
-        font-size: 1.125rem;
-        line-height: 1.75rem;
-    }
+h1 {
+    font-size: 4.5rem;
+    line-height: 120%;
+    font-weight: 600;
 }
