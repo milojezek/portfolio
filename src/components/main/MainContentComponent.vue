@@ -1,8 +1,6 @@
 <template>
   <main>
     <IntroSection />
-    <SkillsSection />
-    <ProjectsSection />
   </main>
 </template>
 

@@ -2,8 +2,7 @@
   <header>
     <a href="/">Miloslav Jezek</a>
     <nav>
-      <a href="#skills-section">Skills</a>
-      <a href="#projects-section">Projects</a>
+      <a href="#about-section">About</a>
     </nav>
   </header>
 </template>
