@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Frontend Development, JavaScript, TypeScript, ReactJS, VueJS</h1>
+    <h1>Web Development, JavaScript, TypeScript, ReactJS, VueJS, NodeJS</h1>
     <ProjectsSection />
     <section id="about">
       <p
