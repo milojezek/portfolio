@@ -64,16 +64,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.cards-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
 
-@media (min-width: 640px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-</style>
