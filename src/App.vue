@@ -1,20 +1,23 @@
 <template>
-  <HeaderComponent />
-  <MainContentComponent />
-  <FooterComponent />
+  <header>
+    <a href="/">Miloslav Jezek</a>
+    <nav>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <MainContent />
+  <footer>
+    <p class="footer-text">© Miloslav Jezek 2025</p>
+  </footer>
 </template>
 
 <script>
-import HeaderComponent from "@/components/header/HeaderComponent.vue";
-import FooterComponent from "@/components/footer/FooterComponent.vue";
-import MainContentComponent from "@/components/main/MainContentComponent.vue";
+import MainContent from "@/components/MainContent.vue";
 
 export default {
   name: "App",
   components: {
-    HeaderComponent,
-    MainContentComponent,
-    FooterComponent,
+    MainContent,
   },
 };
 </script>

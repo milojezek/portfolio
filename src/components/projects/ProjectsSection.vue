@@ -1,6 +1,6 @@
 <template>
   <section id="projects-section">
-    <h2>My Recent Work</h2>
+    <h2>Recent Work</h2>
     <div class="cards-grid">
       <ProjectCard
         v-for="project in projects"
@@ -64,16 +64,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.cards-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
 
-@media (min-width: 640px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-</style>
