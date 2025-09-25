@@ -1,6 +1,6 @@
 <template>
   <section id="projects-section">
-    <h2>My Recent Work</h2>
+    <h2>Recent Work</h2>
     <div class="cards-grid">
       <ProjectCard
         v-for="project in projects"
