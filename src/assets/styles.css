@@ -110,6 +110,10 @@ h2 {
     text-align: left;
 }
 
+.links {
+    margin-top: 3rem;
+}
+
 .footer-text {
     font-size: 1rem;
 }
