@@ -14,7 +14,7 @@
       >I’m Miloslav Jezek, a full stack developer based in Prague (Czechia) with over 3 years of experience in building web applications and websites. My go-to programming languages are JavaScript and TypeScript, but I'm always open to learning and using whatever is best for the job at hand.</p>
     </section>
     <p class="about-text links">
-      <a>LinkedIn</a>
+      <a href="https://www.linkedin.com/in/miloslav-jezek/" target="_blank">LinkedIn</a>
     </p>
   </main>
   <footer>
