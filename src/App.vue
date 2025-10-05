@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a href="/">Miloslav Jezek</a>
+    <a href="https://milojezek.github.io/portfolio/">Miloslav Jezek</a>
     <nav>
       <a href="#about">About</a>
     </nav>
