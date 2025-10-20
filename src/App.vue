@@ -36,7 +36,7 @@
           <p
             class="about-text"
             style="margin-top: 1.5rem;"
-          >This portfolio is my small digital space where I'll showcase my recent personal work. I'm particularly interested in projects related to languages, travelling, health, and anything that makes the lives of people and animals easier. Whether it's a complete app or a small utility tool.</p>
+          >This portfolio is my small digital space where I'll showcase my recent personal work. I'm particularly interested in projects related to languages, travelling, health, and anything that makes living easier. Whether it's a complete app or a small utility tool.</p>
         </div>
       </section>
     </main>
