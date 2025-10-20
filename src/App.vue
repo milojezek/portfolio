@@ -27,6 +27,9 @@
             <a href="https://github.com/milojezek" target="_blank" class="social-link">
               <img src="@/assets/github_icon.png" alt="GitHub" class="social-icon" />
             </a>
+            <a href="mailto:milekdeveloper@gmail.com" class="social-link">
+              <img src="@/assets/email_square_icon.png" alt="E-mail" class="social-icon" />
+            </a>
           </div>
         </div>
         <div class="about-text-container">
