@@ -35,7 +35,7 @@
         <div class="about-text-container">
           <p
             class="about-text"
-          >I'm Miloslav Jezek, a developer based in Prague with experience building full-stack JavaScript/TypeScript web applications. JS & TS are my go-to languages, but I'm always happy to use whatever is most suitable for the job at hand. The backend is the area where I feel best and where I direct my efforts and growth.</p>
+          >I'm Miloslav Jezek, a developer based in Prague with experience building full-stack JavaScript/TypeScript web applications. JS & TS are my go-to languages, but I'm always happy to use whatever is most suitable for the job at hand. The backend is the area where I feel best and where I direct my efforts and growth, but I also enjoy building clean, easy-to-navigate user interfaces.</p>
           <p
             class="about-text"
             style="margin-top: 1.5rem;"
