@@ -1,15 +1,20 @@
 <template>
   <section id="projects-section">
-    <h2>Recent Work</h2>
+    <h2 class="fade-in">Recent Work</h2>
     <div class="cards-grid">
-      <ProjectCard
-        v-for="project in projects"
+      <div
+        v-for="(project) in projects"
         :key="project.id"
-        :title="project.title"
-        :description="project.description"
-        :projectUrl="project.projectUrl"
-        :image="project.image"
-      />
+        class="fade-in"
+        :class="'fade-in-delay-2'"
+      >
+        <ProjectCard
+          :title="project.title"
+          :description="project.description"
+          :projectUrl="project.projectUrl"
+          :image="project.image"
+        />
+      </div>
     </div>
   </section>
 </template>
