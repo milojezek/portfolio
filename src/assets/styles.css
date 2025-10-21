@@ -294,6 +294,8 @@ a:hover {
     align-items: flex-start;
     gap: 3rem;
     margin: var(--section-margin-large) 0 1rem 0;
+    scroll-margin-top: 8rem;
+    /* So it's displayed correctly when #about link clicked */
 }
 
 /* Photo and Links Container */
