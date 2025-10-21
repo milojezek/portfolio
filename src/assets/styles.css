@@ -144,6 +144,10 @@ h1 {
     line-height: 1.2;
 }
 
+h1.subtitle {
+    color: #5a5a5a;
+}
+
 h2 {
     font-size: 2rem;
     font-weight: 500;
@@ -327,6 +331,10 @@ a:hover {
 .about-text-container .about-text {
     width: 100%;
     margin: 0;
+}
+
+.about-text-container .about-text.about-text-spacing {
+    margin-top: 1.5rem;
 }
 
 /* Social Links */
