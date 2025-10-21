@@ -1,6 +1,9 @@
 <template>
   <section id="projects-section">
     <h2 class="fade-in">Recent Work</h2>
+    <p
+      class="fade-in placeholder-note"
+    >This section currently shows random texts and images - real projects will be added later.</p>
     <div class="cards-grid">
       <div
         v-for="(project) in projects"

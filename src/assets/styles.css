@@ -199,6 +199,11 @@ a:hover {
     margin-right: auto;
 }
 
+.placeholder-note {
+    color: #767b85;
+    margin-bottom: 0.5rem;
+}
+
 .cards-grid {
     display: grid;
     grid-template-columns: 1fr;
