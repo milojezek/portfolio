@@ -7,7 +7,7 @@
       </nav>
     </header>
     <main>
-      <h1 class="fade-in fade-in-delay-1">Software Developer</h1>
+      <h1 class="fade-in fade-in-delay-1">Full Stack Developer</h1>
       <h1 class="fade-in fade-in-delay-2 subtitle">JavaScript & TypeScript</h1>
       <h1 class="fade-in fade-in-delay-3 subtitle">Node | Express | React | Vue</h1>
       <div class="fade-in fade-in-delay-4">
