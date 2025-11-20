@@ -456,6 +456,15 @@ a:hover {
     }
 }
 
+/* Larger screens (min-width: 641px) - Sticky photo */
+@media (min-width: 641px) {
+    .photo-links-container {
+        position: sticky;
+        top: 8rem;
+        align-self: flex-start;
+    }
+}
+
 /* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
     header {
@@ -519,6 +528,7 @@ a:hover {
         order: 1;
         margin-bottom: 1rem;
         align-self: center;
+        position: static;
     }
 
     .about-text-container {
